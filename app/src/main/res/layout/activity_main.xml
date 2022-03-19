@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#A5C8F4">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:weightSum="6">
+
+        <Button
+            android:id="@+id/si"
+            android:layout_width="83dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:onClick="pulsarBoton"
+            android:background="#D2B3F7"
+            android:text="SI"
+            android:textColor="#C0B2E9"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="242dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="#9B57ED"
+            android:text="ADIVINA QUIEN" />
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="wrap_content"
+            android:layout_height="620dp"
+            app:srcCompat="@drawable/selena_gomez" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:weightSum="6">
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="95dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:text="NO"
+            android:textColor="#CFC6F4"
+            android:textSize="30dp"
+            android:onClick="pulsarno"/>
+
+    </LinearLayout>
+</LinearLayout>
